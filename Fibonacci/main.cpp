@@ -1,16 +1,17 @@
 #include <iostream>
-#include "gmp-6.2.1/gmp-impl.h"
+#include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
+using namespace boost::multiprecision;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    int limit = 1473;
 
-    int limit = 1000;
+    cout << "Fibonacci madness! (" << limit << " numbers)" << endl;
 
-     fi = 1;
-    long long fi1 = 1;
-    long long fi2;
+    uint1024_t fi = 1;
+    uint1024_t fi1 = 1;
+    uint1024_t fi2;
 
     cout << fi << endl;
     cout << fi1 << endl;
